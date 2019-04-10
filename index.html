@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
      <link rel="stylesheet" href="index.css">
-    <title>Sitio Bootstrap</title>
+     <link rel="icon" type="imagenes/png" href="images/favicon.png">
+    <title>Portafolio</title>
   </head>
   <body data-spy="scroll" data-target="#navbar" data-offset="50">
       <!-- Header -->
@@ -17,8 +17,8 @@
         <div class="container">  
             <a class="navbar-brand" href="#">
 
-                    <img src="assets/images/platzi.png" alt="">
-                    Conf Hawaii
+                    <img src="images/logo.jpeg" alt="">
+                    <strong>Ricardo Algarin</strong>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,19 +27,16 @@
                 <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                    <a class="nav-link" href="#main">La conferencia</a>
+                    <a class="nav-link" href="#main">Inicio</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#speakers">Los oradores</a>
+                    <a class="nav-link" href="#projects">Los Proyectos</a>
                     </li>
-                    <li class="nav-item">
-                            <a class="nav-link" href="#place-time">El lugar y la fecha</a>
-                        </li>
                         <li class="nav-item">
-                                <a class="nav-link" href="#conviertete-en-orador">Conviertete en orador</a>
+                            <a class="nav-link" href="#solicitar-presupuesto">Solicitar Presupuesto</a>
                             </li>
                             <li class="nav-item">
-                                    <a class="nav-link text-platzi" href="#" data-target="#modalCompra" data-toggle="modal">Comprar ticket</a>
+                                    <a class="nav-link text-platzi" href="#" data-target="#modalCompra" data-toggle="modal">Contacto</a>
                                 </li>
                 </ul>
                 </div>  
@@ -51,25 +48,22 @@
         <div id="carousel" class="carousel slide" data-ride="carousel" data-pause="false">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img class="d-block w-100" src="assets/images/hawaii.jpg" alt="First slide">
+                    <img class="d-block w-100" src="images/bandera.jpg" alt="First slide">
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/images/hawaii2.jpg" alt="Second slide">
+                    <img class="d-block w-100" src="images/roques.jpg" alt="Second slide">
                   </div>
                   <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/images/hawaii3.jpeg" alt="Third slide">
+                    <img class="d-block w-100" src="images/angel.jpg" alt="Third slide">
                   </div>
                   <div class="overlay">
                       <div class="container">
                        <div class="row align-items-center">
                            <div class="col-md-6 offset-md-6 text-center text-md-justify">
-                               <h1>Platzi conf Hawaii</h1>
-                               <p class="d-none d-md-block">Platzi conferencia por primera vez en hawaii utilizando bootstrap tambien por primera vez
-                                   compartiendo con la comunidad experiencia. <br> Ven a conocer al team platzi, a otros estudiantes y a los
-                                   oradores de primer nivel.
-                               </p>
-                               <a href="#" class="btn btn-outline-light">Quiero ser orador</a>
-                               <button type="button" class="btn btn-platzi" data-target="#modalCompra" data-toggle="modal">Comprar Tickets</button>
+                               <h1> <strong>Portafolio</strong></h1>
+                               <h2 id="saludo" class="d-none d-md-block"> Hola! soy Ricardo Algarin Mendoza, Ingeniero en Sistemas en busca de aprender cada vez mas. <br> Bienvenido a mi Portafolio de proyectos, donde encontrarás mis últimos trabajos.
+                               </h2>
+                               
                            </div>
                        </div>
                       </div>
@@ -79,98 +73,63 @@
 </main>
 
 <!-- speakers -->
-<section id="speakers" class="mt-4 ">
+<section id="projects">
 <div class="container">
 <div class="row">
     <div class="col text-center text-uppercase">
-        <small>Conoce a los</small>
-        <h2>Oradores</h2>
+        <h2>Proyectos</h2>
     </div>
 </div>
-<div class="row">
-    <div class="col-md-4 mb-4">
-            <div class="card">
-                    <img class="card-img-top" src="assets/speakers/sacha.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <div class="badges">
-                              <span class="badge badge-pill badge-success">JavaScript</span>
-                              <span class="badge badge-pill badge-warning">React</span>
-                        </div>
-                      <h5 class="card-title">Sacha lifszyc</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac lectus est. Sed eu molestie odio, ut pretium mauris. Ut sed ultrices enim. Duis interdum eros ut convallis molestie. Sed ac urna volutpat, rhoncus urna sit amet, lobortis ante. Etiam varius nunc ac pellentesque suscipit. Aliquam vehicula dolor ac ligula sagittis efficitur. In hac habitasse platea dictumst. Suspendisse ligula erat, lobortis sed sem pulvinar, laoreet ullamcorper erat.</p>
-                    </div>
-                  </div>
-    </div>
-    <div class="col-md-4 mb-4">
-            <div class="card">
-                    <img class="card-img-top" src="assets/speakers/leonidas2.jpeg" alt="Card image cap">
-                    <div class="card-body">
-                            <div class="badges">
-                                    <span class="badge badge-pill badge-primary">JavaScript</span>
-                                    <span class="badge badge-pill badge-warning">React</span>
-                              </div>
-                      <h5 class="card-title">Leonidas Esteban</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac lectus est. Sed eu molestie odio, ut pretium mauris. Ut sed ultrices enim. Duis interdum eros ut convallis molestie. Sed ac urna volutpat, rhoncus urna sit amet, lobortis ante. Etiam varius nunc ac pellentesque suscipit. Aliquam vehicula dolor ac ligula sagittis efficitur. In hac habitasse platea dictumst. Suspendisse ligula erat, lobortis sed sem pulvinar, laoreet ullamcorper erat.</p>
-                    </div>
-                  </div>
-    </div>
-    <div class="col-md-4 mb-4">
-            <div class="card">
-                    <img class="card-img-top" src="assets/speakers/freddy.jpeg" alt="Card image cap">
-                    <div class="card-body">
-                            <div class="badges">
-                                    <span class="badge badge-pill badge-dark">Startups</span>
-                                    <span class="badge badge-pill badge-danger">Emprendimiento</span>
-                              </div>
-                      <h5 class="card-title">Freddy Vega</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac lectus est. Sed eu molestie odio, ut pretium mauris. Ut sed ultrices enim. Duis interdum eros ut convallis molestie. Sed ac urna volutpat, rhoncus urna sit amet, lobortis ante. Etiam varius nunc ac pellentesque suscipit. Aliquam vehicula dolor ac ligula sagittis efficitur. In hac habitasse platea dictumst. Suspendisse ligula erat, lobortis sed sem pulvinar, laoreet ullamcorper erat.</p>
-                    </div>
-                  </div>
-    </div>
-    <div class="col-md-4 mb-4">
-            <div class="card">
-                    <img class="card-img-top" src="assets/speakers/cvander.jpeg" alt="Card image cap">
-                    <div class="card-body">
-                            <div class="badges">
-                                    <span class="badge badge-pill badge-primary">Video Juegos</span>
-                                    <span class="badge badge-pill badge-warning">negocios</span>
-                              </div>
-                      <h5 class="card-title">Christian Van Der H.</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac lectus est. Sed eu molestie odio, ut pretium mauris. Ut sed ultrices enim. Duis interdum eros ut convallis molestie. Sed ac urna volutpat, rhoncus urna sit amet, lobortis ante. Etiam varius nunc ac pellentesque suscipit. Aliquam vehicula dolor ac ligula sagittis efficitur. In hac habitasse platea dictumst. Suspendisse ligula erat, lobortis sed sem pulvinar, laoreet ullamcorper erat.</p>
-                    </div>
-                  </div>
-    </div>
-</div>
-</div>
+<section id="portafolio" class="portfolio">
+    <article class="project">
+        <div class="project-details">
+            <h3 class="project-tittle">Control de Solicitudes</h3>
+            <h6 class="project-course">Avior</h6>
+            <p class="project-date"><small><strong>Fecha:</strong> 08/10/2018</small></p>
+            <p class="project-url"><small><strong>Puedes verlo en: <a href="https://www.aviorair.com/" target="_blank"> </strong>www.aviorair.com</small></a></p>
+            <p class="project-description">Este proyecto se trata de un programa de "ticketing" para optimizar el manejo y control de solicitudes del departamento de informatica de la empresa Avior Airlines.
+            </p>
+        </div>
+        <figure class="project-imageConteiner">    
+            <img class="project-image" src="images/avior.jpg" alt="proyecto curso avior" width="500">
+        </figure>
+    </article>
+    <article class="project">
+            <div class="project-details">
+                <h3 class="project-tittle">Amazon Viewer</h3>
+                <h6 class="project-course">Personal</h6>
+                <p class="project-date"><small><strong>Fecha:</strong> 20/03/2019</small></p>
+                <p class="project-url"><small><strong>Puedes verlo en:</strong>www.github.com</small></p>
+                <p class="project-description">Este curso fue el resultado de una semana de aprendizaje interactivo
+                    con el cual el aprendizaje fue muy beneficioso.
+                </p>
+            </div>
+            <figure class="project-imageConteiner">    
+                <img class="project-image" src="images/platzi-video-react-native.png" alt="proyecto curso react" width="500">
+            </figure>
+        </article>
+    <article class="project">
+            <div class="project-details">
+                <h3 class="project-tittle">Fundamentos de Software</h3>
+                <h6 class="project-course">Platzi</h6>
+                <p class="project-date"><small><strong>Fecha:</strong> 19/09/2018</small></p>
+                <p class="project-url"><small><strong>puedes verlo en:</strong>www.platzi.com</small></p>
+                <p class="project-description">Este curso fue el resultado de una semana de aprendizaje interactivo
+                    con el cual el aprendizaje fue muy beneficioso.
+                </p>
+            </div>
+            <figure class="project-imageConteiner">    
+                <img class="project-image" src="images/platzi-video-react-native.png" alt="proyecto curso react" width="500">
+            </figure>
+        </article>
+</section>
 </section>
 
 <!-- /speakers -->
 
-<!-- Lugar y Fecha -->
+<!-- Presupuesto -->
 
-<section id="place-time">
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-12 col-lg-6 pl-0 pr-0">
-        <img src="assets/images/honolulu.jpg" alt="honolulu">
-        </div>
-        <div class="col-12 col-lg-6 pt-4 pb-4">
-         <h2>Honolulu - Octubre 2025</h2>
-         <p class="text-md-justify">Honolulu o Honolulú​ es la capital y localidad más grande del estado de Hawái, en los Estados Unidos.​ Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la isla (aproximadamente 600 km² de superficie). <br>
-
-                En hawaiano, "Honolulu" significa "bahía resguardada" o "lugar de resguardo". Se dice que antiguamente se llamaba Kou, el nombre de un distrito que abarca aproximadamente el área desde Nuuanu Avenue a Alakea Street y de Hotel Street a Queen Street, y que es el corazón del actual distrito del centro. Otros lugares de Oahu con renombre internacional son Waikiki, Pearl Harbor y Diamond Head.</p>
-        <a class="btn btn-outline-light" href="https://es.wikipedia.org/wiki/Honolulu">Conocer más...</a>
-            </div>
-    </div>
-
-</div>
-
-</section>
-
-<!-- /Lugar y Fecha -->
-<!-- Conviertete en Speaker -->
-
-<section id="conviertete-en-orador" class="pt-3 pb-3">
+<section id="solicitar-presupuesto" class="pt-2 pb-3">
     <div class="container">
         <div class="row">
             <div class="col text-center">

@@ -8,10 +8,11 @@
 
 #header img{
     width: 80px;
+    border-radius: 20px;
 }
 
 .text-platzi{
-    color: #97c93e !important;
+    color:  #026fff !important;
 }
 
 #main .carousel-inner img{
@@ -48,11 +49,75 @@
     background-color: #658f1c;
 }
 
-#place-time{
-    background-color: #343a40;
-    color: white;
+
+strong{
+    color: rgb(54, 92, 216);
+}
+#saludo{
+    text-align: justify;
+}
+#solicitar-presupuesto{
+    background-color: #026fff;
+}
+.project {
+    /*
+    border-color: #2e0252;
+    border-width: 15px;
+    border-style: groove */
+    border: 15px groove  #cfcece;
+    border-radius: 10px;
+    border-top-right-radius: 50px;
+    margin-bottom: 15px;
+   
+    padding: 20px; 
+    background: #cfcece;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 3px 5px 30px 10px #888888; 
 }
 
-#place-time img{
-    max-width: 100%;
+.project-course,
+.project-date,
+.project-url{
+    margin: 10px 0;
+}
+
+.project strong{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.project-tittle {
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+
+}
+
+.project-details {
+    width: 500px;
+}
+
+.project-imageConteiner {
+    width: 500px;
+}
+
+#portfolio{
+    background: #cfcece;
+    padding: 20px;
+    
+}
+#projects{
+    background: #cfcece;
+    margin-top: auto;
+    margin-bottom: auto
+}
+#solicitar-presupuesto{
+    margin-top: auto
+}
+
+body{
+    background: #cfcece; 
 }
