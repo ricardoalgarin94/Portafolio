@@ -2,6 +2,8 @@
     background: linear-gradient(90deg,#1c3643,#273b47 25%,#1e5372);
 }
 
+
+
 #footer a{
     color: white
 }
@@ -11,7 +13,7 @@
     border-radius: 20px;
 }
 
-.text-platzi{
+.text-portaf{
     color:  #026fff !important;
 }
 
@@ -40,18 +42,21 @@
     height: 100%;
 }
 
-.btn-platzi{
-    background-color: #81ad35;    
+.btn-portaf{
+    background: #1c3643;   
     color: white;
 }
 
-.btn-platzi:hover{
-    background-color: #658f1c;
+.btn-portaf:hover{
+    background-color: #3280b4;
 }
 
+.logo{
+    color: rgba(255, 251, 251, 0.973)
+}
 
 strong{
-    color: rgb(54, 92, 216);
+    color: #03459b;
 }
 #saludo{
     text-align: justify;
@@ -60,10 +65,7 @@ strong{
     background-color: #026fff;
 }
 .project {
-    /*
-    border-color: #2e0252;
-    border-width: 15px;
-    border-style: groove */
+    
     border: 15px groove  #cfcece;
     border-radius: 10px;
     border-top-right-radius: 50px;
@@ -96,12 +98,21 @@ strong{
 
 }
 
+
+
 .project-details {
     width: 500px;
+    
+}
+
+.project-image{
+
+    border-radius: 30px;
 }
 
 .project-imageConteiner {
     width: 500px;
+    
 }
 
 #portfolio{
@@ -120,4 +131,29 @@ strong{
 
 body{
     background: #cfcece; 
+}
+
+.social-link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    /*border: 1px solid white;*/
+}
+
+.social-link.twitter{
+background-image: url(images/twitter.svg);
+background-size: 50px 50px;
+}
+.social-link.facebook{
+background-image: url(images/facebook.svg);
+background-size: 50px 50px;
+}
+.social-link.github{
+background-image: url(images/github.svg);
+background-size: 50px 50px;
+}
+.social-link.instagram{
+background-image: url(images/instagram.svg);
+background-size: 50px 50px;
 }

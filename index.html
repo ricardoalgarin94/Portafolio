@@ -18,7 +18,7 @@
             <a class="navbar-brand" href="#">
 
                     <img src="images/logo.jpeg" alt="">
-                    <strong>Ricardo Algarin</strong>
+                    <strong class="logo">Ricardo Algarin</strong>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,7 +36,7 @@
                             <a class="nav-link" href="#solicitar-presupuesto">Solicitar Presupuesto</a>
                             </li>
                             <li class="nav-item">
-                                    <a class="nav-link text-platzi" href="#" data-target="#modalCompra" data-toggle="modal">Contacto</a>
+                                    <a class="nav-link text-portaf" href="#" data-target="#modalCompra" data-toggle="modal">Contacto</a>
                                 </li>
                 </ul>
                 </div>  
@@ -72,7 +72,7 @@
               </div>
 </main>
 
-<!-- speakers -->
+
 <section id="projects">
 <div class="container">
 <div class="row">
@@ -99,33 +99,29 @@
                 <h3 class="project-tittle">Amazon Viewer</h3>
                 <h6 class="project-course">Personal</h6>
                 <p class="project-date"><small><strong>Fecha:</strong> 20/03/2019</small></p>
-                <p class="project-url"><small><strong>Puedes verlo en:</strong>www.github.com</small></p>
-                <p class="project-description">Este curso fue el resultado de una semana de aprendizaje interactivo
-                    con el cual el aprendizaje fue muy beneficioso.
+                <p class="project-url"><small><strong>Puedes verlo en: <a href="https://github.com/ricardoalgarin94" target="_blank"></strong>www.github.com</small></a></p>
+                <p class="project-description">Este proyecto fue el resultado de el ejercicio final de el curso de Java SE de portaf, el cual se trata de un "Amazon Viewer", un programa que muestra informacion de series, libros, magazines. Contando con disintas opciones a escoger.
                 </p>
             </div>
             <figure class="project-imageConteiner">    
-                <img class="project-image" src="images/platzi-video-react-native.png" alt="proyecto curso react" width="500">
+                <img class="project-image" src="images/java.png" alt="proyecto curso java" width="500">
             </figure>
         </article>
     <article class="project">
             <div class="project-details">
-                <h3 class="project-tittle">Fundamentos de Software</h3>
-                <h6 class="project-course">Platzi</h6>
-                <p class="project-date"><small><strong>Fecha:</strong> 19/09/2018</small></p>
-                <p class="project-url"><small><strong>puedes verlo en:</strong>www.platzi.com</small></p>
-                <p class="project-description">Este curso fue el resultado de una semana de aprendizaje interactivo
-                    con el cual el aprendizaje fue muy beneficioso.
+                <h3 class="project-tittle">Videojuegos Narrativos</h3>
+                <h6 class="project-course">MasterD</h6>
+                <p class="project-date"><small><strong>Fecha:</strong> 11/04/2019</small></p>
+                <p class="project-url"><small><strong>Puedes verlo en: <a href="https://www.masterd.es/" target="_blank"></strong>www.masterd.es</small></a></p>
+                <p class="project-description">Se trata de la programación de un videojuego narrativo desarrollado durante un curso impartido en el instituto MasterD, sobre qué es y cómo se hacen los juegos narrativos.
                 </p>
             </div>
             <figure class="project-imageConteiner">    
-                <img class="project-image" src="images/platzi-video-react-native.png" alt="proyecto curso react" width="500">
+                <img class="project-image" src="images/juego.jpg" alt="proyecto curso react" width="500">
             </figure>
         </article>
 </section>
 </section>
-
-<!-- /speakers -->
 
 <!-- Presupuesto -->
 
@@ -133,14 +129,14 @@
     <div class="container">
         <div class="row">
             <div class="col text-center">
-              <small > Conviertete en un</small>
-              <h2 class="text-uppercase">orador</h2>
+              <h2> Solicitar</h2>
+              <h2 class="text-uppercase">presupuesto</h2>
             </div>
         </div>
         <div class="row">
             <div class="col text-center">
-              Anótate como orador para dar una charla <abbr data-toggle="tooltip" title="Charlas de 5 minutos">ignite.</abbr>  
-              Cuentamos de qué quieres hablar!
+              <h4>Solicita un <abbr data-toggle="tooltip" title="Euros o Dólares">presupuesto</abbr> para el proyecto que desees.  
+              Cuéntame qué tienes en mente!</h4>
             </div>
         </div>
         <div class="row">
@@ -148,23 +144,24 @@
                     <form>
                             <div class="form-row">
                               <div class="form-group col-12 col-md-6">
-                                <input type="text" class="form-control" placeholder="Nombre">
+                                <input type="text" class="form-control" placeholder="Nombre y Apellido">
                               </div>
                               <div class="form-group col-12 col-md-6">
-                                <input type="text" class="form-control" placeholder="Apellido">
+                                <input type="text" class="form-control" placeholder="Dirección de Email">
+                              </div>
+                              <div class="form-group col-12 col-md-6">
+                                <input type="text" class="form-control" placeholder="Teléfono Móvil">
                               </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col">
-                                    <textarea name="text" class="form-control form-control-lg" placeholder="Sobre qué quieres hablar?"></textarea>
-                                    <small class="form-text form-text-muted">
-                                        Recuerda incluir un titulo para tu charla
-                                    </small>
+                                    <textarea name="text" class="form-control form-control-lg" placeholder="Información a solicitar"></textarea>
+                                    
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="col">
-                                    <button type="button" class="btn btn-platzi btn-block" data-toggle="tooltip" data-placement="right" title="Enviar formulario">Enviar</button>
+                                    <button type="button" class="btn btn-portaf btn-block" data-toggle="tooltip" data-placement="right" title="Enviar formulario">Enviar</button>
                                 </div>
                             </div>
                           </form>
@@ -173,50 +170,35 @@
     </div>
 </section>
 
-<!-- /Conviertete en Speaker -->
 
     <!-- Footer -->
    <footer id="footer" class="pb-4 pt-4">
        <div class="container">
            <div class="row text-center">
             <div class="col-12 col-lg">
-                <a href="#">Preguntas frecuentes</a>
+                <a href="https://twitter.com/ricardoalgarin2" target="_blank" class="social-link twitter"></a>
             </div>
             <div class="col-12 col-lg">
-                <a href="#">Contáctanos</a>
+                <a href="https://facebook.com/ricardoalgarin" target="_blank" class="social-link facebook"></a>
             </div>
             <div class="col-12 col-lg">
-                <a href="#">Prensa</a>
+                <a href="https://github.com/ricardoalgarin94" target="_blank" class="social-link github"></a>
             </div>
             <div class="col-12 col-lg">
-                <a href="#">Conferencias</a>
-            </div>
-            <div class="col-12 col-lg">
-                <a href="#">Terminos y condiciones</a>
-            </div>
-            <div class="col-12 col-lg">
-                <a href="#">Privacidad</a>
-            </div>
-            <div class="col-12 col-lg">
-                <a href="#">Estudiantes</a>
+                <a href="https://instagram.com/ricardoalgarin" target="_blank" class="social-link instagram"></a>
             </div>
            </div>
        </div>
    </footer>
 <!-- /Footer -->
 
-<!-- Modal -->
-<!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-        Launch demo modal
-      </button> -->
-      
+
       <!-- Modal -->
       <div class="modal fade" id="modalCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalCenterTitle">Comprar Tickets</h5>
+              <h5 class="modal-title" id="exampleModalCenterTitle">Contáctame</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -227,20 +209,28 @@
                       <div class="form-group col">
                             <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                      <span class="input-group-text" id="basic-addon1">@</span>
+                                      <span class="input-group-text" id="basic-addon1">Móvil: +34 685090927</span>
                                     </div>
-                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        
+                                  </div>
+                      </div>
+                      <div class="form-group col">
+                            <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text" id="basic-addon1">ricardoalgarin94@gmail.com</span>
+                                    </div>
+
                                   </div>
                       </div>
                   </div>
               </form>
               <div class="alert alert-warning" role="alert">
-                   Recibirás un correo de alerta si sales sorteado.
+                   Recibirás un correo de respuesta a la brevedad posible.
                   </div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-              <button type="button" class="btn btn-platzi">Comprar</button>
+               <button  type="button" class="btn btn-portaf"><a href="https://mail.google.com" target="_blank">Contactar</button></a>
             </div>
           </div>
         </div>
@@ -248,7 +238,6 @@
 <!-- /Modal -->
 
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
