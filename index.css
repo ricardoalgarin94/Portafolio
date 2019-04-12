@@ -45,10 +45,17 @@
 .btn-portaf{
     background: #1c3643;   
     color: white;
+    text-decoration: none;
+    
 }
 
 .btn-portaf:hover{
     background-color: #3280b4;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 .logo{
