@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Donde Estamos</title>
+
+	<!-- links a google, css, ajax y bootstrap-->
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" title="Avior">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" type="imagenes/png" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="keywords" content="" />
+<meta name="description" content="" />
+<script type="text/JavaScript" src="https://www.google.com/maps/api/js?key=AIzaSyBNcnBZZlLTj3I6CJtg7Tx3K4_xbE-nEts"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+</head>
+
+<header style="background: #cfcece;">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <h1 class="navbar-brand" href="">Localización de la Empresa</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+</header>
+        <script type="text/javascript">
+
+            var mapa;
+            var mostrar_direcciones;
+            //DirectionService nos permite calcular dichas rutas
+            var servicios_rutas = new google.maps.DirectionsService(); 
+            var LatLng = {lat:40.443489, lng: -3.578152};
+            function cargarmapa() 
+            { 
+                //Coordenadas de la empresa;
+                mostrar_direcciones = new google.maps.DirectionsRenderer();
+                var opciones = {
+                    zoom: 10,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    center: new google.maps.LatLng(40.419780, -3.691241)
+                };
+                  mapa = new google.maps.Map(document.getElementById("mapa"), opciones);
+                mostrar_direcciones.setMap(mapa);
+                mostrar_direcciones.setPanel(document.getElementById("ruta"));
+            
+            
+                //Creaccion de la marca
+                var marca = new google.maps.Marker({ 
+                    position:LatLng, 
+                    map: mapa, 
+                    title: "Ricardo Algarin C.A" 
+                    });
+            //Creaccion de los datos de la caja.
+                var caja = new google.maps.InfoWindow({ 
+                    content: 'Empresa: <b>Ricardo Algarin C.A</b><br/>Teléfono:685090927<br/>Dirección: calle de yecora, número 10' 
+                        });
+                //Creaccion del evento para que aparezca datos dentro de caja. 
+                google.maps.event.addListener(marca, 'click', function() { 
+                        caja.open(mapa,marca); 
+                        }); 
+            
+                    
+            }
+            
+            function calcularRuta()
+            { 
+            
+                //Indica el origen de la ruta
+                var partida = document.getElementById("partida").value; 
+                //Indica el destino donde queremos ir.
+                var destino = LatLng;
+                //document.getElementById("destino").value; 
+                //indicamos en este caso que hacemos el viaje en coche/moto 
+                var opciones = { 
+                    origin:partida, 
+                    destination:destino, 
+                    travelMode: google.maps.TravelMode.DRIVING 
+                    }; 
+                //route es el metodo al que llamaremos para buscar la ruta.
+                servicios_rutas.route(opciones,function(response, status) 
+                { 
+            
+                    if (status == google.maps.DirectionsStatus.OK)
+                    {
+                        //mostrar_direcciones = new google.maps.DirectionsRenderer({mapa:mapa});
+                        mostrar_direcciones.setDirections(response);
+                    }
+            
+                }); 
+            }
+            </script>
+            
+            
+           <body  onload="cargarmapa()">
+               
+          
+            <div id="main_top" >
+            
+                <div id="main" > 
+                    
+            
+                    <div id="right" >
+            
+                        <br/><br/><br/> 
+            
+                        <div id="mapa" style="width:500px; height:550px; margin-left: 20px; margin-top:20px;"> </div><!-- Fin de mapa--> 
+            
+                        
+                        <div id="ruta" style=" overflow-block:initial ; width:260px;float:left; margin-top:-500px; font-family: Arial; margin-left:450px; padding-left:100px; height:500px">
+            
+                            
+                            <p> <b>Cómo llegar desde: </b></p>
+                            <input  id="partida" type="textbox" value=""> <br>
+            
+                            <!--<p><b> Al Destino </b> </p>
+                            <input id="destino" type="textbox" value="" size="20"></br>	-->
+            
+                            <input  type="button" id="boton_imagen" value="Calcular" onclick='calcularRuta()'> <br>
+            
+                                    
+                        </div> <!--Fin de ruta-->
+                                
+                        <!--<div class="text">	</div> Fin de text--> 
+                    
+                        
+                        <div class="date">
+                            <div class="estimado">
+                            </div><!--Fin dateright-->
+                            <div class="estimado">
+                            </div><!--Fin dateleft-->
+                        </div><!--Fin date-->
+            
+                
+                    </div><!--Fin right-->
+                    
+            
+            
+                    
+                    <div style="clear:both;">
+                    </div><!--Fin clear-->
+                    
+                </div><!--Fin main-->
+            
+                <div id="main_bottom">
+                </div><!--Fin main_bottom-->
+            </div><!--Fin main_top-->
+            
+            </body>
+            </html>
+            
+      </nav>
+      <br>
+	
+
+	
+	
+
+	
+
+
+</body>
+</html>

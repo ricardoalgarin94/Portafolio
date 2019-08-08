@@ -121,7 +121,10 @@ strong{
     width: 500px;
     
 }
-
+#project-imageConteiner {
+    width: 500px;
+    
+}
 #portfolio{
     background: #cfcece;
     padding: 20px;
@@ -130,10 +133,32 @@ strong{
 #projects{
     background: #cfcece;
     margin-top: auto;
-    margin-bottom: auto
+    margin-bottom: auto;
+    display: flexbox
 }
 #solicitar-presupuesto{
     margin-top: auto
+}
+#RSS{
+    background: #8b8989;
+}
+
+.RSS-details {
+    
+    border: 15px solid  #cfcece;
+    border-radius: 10px;
+    border-top-right-radius: 50px;
+    margin-bottom: 15px;
+   
+
+   
+    padding: 20px; 
+    background: #cfcece;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 3px 5px 30px 10px #888888; 
 }
 
 body{
